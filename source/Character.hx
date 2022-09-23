@@ -122,6 +122,20 @@ class Character extends Sprite
 
 				playAnim('idle');
 
+			case 'red-tabi':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('characters/Red-Tabi');
+				frames = tex;
+				animation.addByPrefix('idle', 'Dad idle dance', 24, false);
+				animation.addByPrefix('singUP', 'Dad Sing Note UP', 24, false);
+				animation.addByPrefix('singRIGHT', 'Dad Sing Note RIGHT', 24, false);
+				animation.addByPrefix('singDOWN', 'Dad Sing Note DOWN', 24, false);
+				animation.addByPrefix('singLEFT', 'Dad Sing Note LEFT', 24, false);
+				healthBarColor.setRGB(175, 102, 206, 255);
+				loadOffsetFile(curCharacter);
+
+				playAnim('idle');
+
 			case 'spooky':
 				tex = Paths.getSparrowAtlas('characters/spooky_kids_assets');
 				frames = tex;
